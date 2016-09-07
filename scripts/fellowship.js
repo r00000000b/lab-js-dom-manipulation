@@ -24,6 +24,35 @@ var body = document.querySelector('body');
 
 
 function makeMiddleEarth() {
+  var section = document.createElement('section');
+
+  var shireLand = document.createElement('article');
+  section.appendChild(shireLand);
+  shireLand.innerHTML = "<h1>The Shire</h1>"
+  /*var shire = document.createTextNode('The Shire');
+  section.appendChild(shire);*/
+
+  var rivendellLand = document.createElement('article');
+  section.appendChild(rivendellLand);
+  rivendellLand.innerHTML = "<h1>Rivendell</h1>"
+  /*var rivendell = document.createTextNode('Rivendell');
+  section.appendChild(rivendell);*/
+
+  var mordorLand = document.createElement('article');
+  section.appendChild(mordorLand);
+  mordorLand.innerHTML = "<h1>Mordor</h1>"
+/*  var mordor = document.createTextNode('Mordor');
+  section.appendChild(mordor);*/
+
+  // var body1 = document.getElementByTagName('body');
+  //body1.appendChild('section');
+/*
+  section.appendChild(newLands);
+  section.setAttribute('class', 'h1')
+  section.appentChild(newLands);
+  section.appendChild(newLands);
+  var section = document.getElementByTagName('section')[0];
+*/
   // create a section tag with an id of middle-earth
   // add each land as an article tag
   // inside each article tag include an h1 with the name of the land
@@ -38,6 +67,30 @@ makeMiddleEarth();
 function makeHobbits() {
   // display an unordered list of hobbits in the shire (which is the second article tag on the page)
   // give each hobbit a class of hobbit
+  var hobbits = document.createElement('ul');
+
+  var gandalf = document.createElement('li');
+  hobbits.appendChild(gandalf);
+  gandalf.innerHTML = "Gandalf the Gray";
+
+  var legolas = document.createElement('li');
+  hobbits.appendChild(legolas);
+  legolas.innerHTML = "Legolas";
+
+  var gimli = document.createElement('li');
+  hobbits.appendChild(gimli);
+  gimli.innerHTML = "Gimli";
+
+  var strider = document.createElement('li');
+  hobbits.appendChild(strider);
+  strider.innerHTML = "Strider";
+
+  var boromir = document.createElement('li');
+  hobbits.appendChild(boromir);
+  boromir.innerHTML = "Boromir";
+
+hobbits.setAttribute('class', 'hobbit');
+
 }
 
 
@@ -49,7 +102,6 @@ function keepItSecretKeepItSafe() {
   // add an event listener so that when a user clicks on the ring, the nazgulScreech function (provided) is invoked
   // add the ring as a child of Frodo
 }
-
 
 // Part 4
 
